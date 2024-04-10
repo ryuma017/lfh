@@ -1,0 +1,18 @@
+[package]
+name = "lfh"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.82"
+cfg-if = "1.0.0"
+grep-cli = "0.1.10"
+objc2 = "0.5.0"
+
+[dependencies.icrate]
+version = "0.1.0"
+features = ["AppKit", "AppKit_NSRunningApplication", "Foundation", "Foundation_NSString"]
+
+[[bin]]
+name = "lfh"
+path = "main.rs"
